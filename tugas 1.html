@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- css -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    
+  <!-- JS --->  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <style>
+.hero {
+background-image: url("https://imgsrv2.voi.id/zF5xy6tKQoLb_bbL5_seK_inlh5oP7oOWnc6HEp-yJM/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy80NzI2MjgvMjAyNTAzMjkyMDA5LW1haW4uY3JvcHBlZF8xNzQzMjUzNzk4LmpwZWc.jpg"); /* ganti dengan gambar kamu */
+background-size: cover;
+background-position: center;
+min-height: 100vh;
+}
+.overlay {
+background-color: rgba(0, 0, 0, 0.5); /* efek gelap */
+min-height: 100vh;
+}
+
+.container{
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="hero">
+<div
+class="overlay d-flex justify-content-center align-items-center text-center"
+>
+<div class="text-white">
+<h1 class="display-5 fw-bold">Sistem Menejemen Siswa</h1>
+<p class="fs-4">Kelola data kehadiran,profil,dan status akademik siswa dengan lebih mudah dan efisien.</p>
+<button class="btn btn-primary btn-lg">Mulai</button>
+<button class="btn btn-outline-light btn-lg">Panduan</button>
+</div>
+</div>
+</div>
+
+ <!--tabel-->
+ 
+<div class="container">
+  
+ <h2>Tabel Data Siswa</h2>
+
+ <table class="table table-bordered table-striped table-hover ">
+   <div class="card-shadow">
+   <thead>
+      <tr class="table-dark">
+        <th>No</th>
+        <th>Foto</th>
+        <th>Nama</th>
+        <th>Kelas</th>
+        <th>Status</th>
+        <th>Aksi</th>
+      </tr>
+   </thead>
+   <tbody>
+       <tr>
+        <td>1</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAK_EVrrwnlLp_tmhK8KWFfpA-pWpPBstrm-8CpG8glBsRjt9D_Y4neJgF&s=10"
+        class="rounded-circle"
+        style="width:50px;
+                height:50px"></td>
+        <td>sousuke</td>
+        <td>X RPL 1</td>
+        <td><span class="badge bg-success">Aktif</span></td>
+        <td><span class="badge bg-warning">Edit</span><span class="badge bg-danger">Hapus</span></td>
+       </tr>
+       
+       <tr>
+         <td>2</td>
+         <td><img src="https://pbs.twimg.com/media/Fk-N7zLaYAA6uz8.jpg"
+         class="rounded-circle"
+         style="width:50px;
+                 height:50px"></td>
+         <td>shou</td>
+         <td>X RPL 2</td>
+         <td><span class="badge bg-warning">Izin</span></td>
+         <td><span class="badge bg-warning">Edit</span><span class="badge bg-danger">Hapus</span></td>
+       </tr>
+       
+       <tr>
+        <td>3</td>
+        <td><img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lu7tff714i7f1f"
+         class="rounded-circle"
+         style="width:50px;
+                 height:50px"></td>
+        <td>arrietty</td>
+        <td>X RPL 3</td>
+        <td><span class="badge bg-danger">Tidak Hadir</span></td>
+        <td><span class="badge bg-warning">Edit</span><span class="badge bg-danger">Hapus</span></td>
+      </tr>
+   </tbody>
+</table>
+
+
+<!-- label-->
+<button class="btn btn-primary btn-lg">Tambah Data</button>
+<button class="btn btn-outline-dark btn-lg">Ekspor Excel</button>
+</div>
+</div>
+</body>
+</html>
